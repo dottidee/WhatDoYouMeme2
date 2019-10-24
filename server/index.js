@@ -5,9 +5,11 @@ const usersController = require('./controllers/users');
 
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT;
 
 app
+    .get('/port', (req, res) => res.send("using port: " + port))
+    .get('sql', (req, res) => res.send(""))
     .use(function(req, res, next){
         //logging function
         req.params, req.body, req.url, req.query, req.headers
