@@ -1,6 +1,10 @@
 <template>
   <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
+    <router-link class="navbar-item" to="/">
+            <i class = "fas fa-home fa pull-left"></i>
+            Home
+      </router-link> 
     <a class="navbar-item" href="https://bulma.io">
         <img alt = "Vue logo" src ="../assets/logo.png" style = "height: 18 px;">
         W.D.Y.M.
@@ -16,10 +20,7 @@
   <div id="navbarBasicExample" class="navbar-menu" :class = "{'isActive' : isOpen}">
     <div class="navbar-start">
       
-      <router-link class="navbar-item" to="/">
-            <i class = "fas fa-home fa pull-left"></i>
-            Home
-      </router-link> 
+      
       <router-link class="navbar-item" to="/about">
             <i class = "fab fa-vue-js fa pull-left"></i>
             About
@@ -62,6 +63,7 @@
     </div>
   </div>
 </nav>
+
 </template>
 
 <script>
