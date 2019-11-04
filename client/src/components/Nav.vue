@@ -6,7 +6,6 @@
             Home
       </router-link> 
     <a class="navbar-item" href="https://bulma.io">
-        <img alt = "Vue logo" src ="../assets/logo.png" style = "height: 18 px;">
         W.D.Y.M.
     </a>
 
